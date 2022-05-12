@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pomodoro</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Nunito:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="pomodoro-app">
+          <div id="tomato-contain">
+            <div class="main">
+                <div id="result" class="result-bottom-left">Let's study together using the Pomodoro technique! After working for 25 minutes, choose between a short or a long break. Repeat this for each interval until you finish working. I'll be here if you need some encouragement.</div>
+            </div>
+            <div onclick="myFunction()" id="select" class="tomato"></div>
+            
+          </div>
+            <div id="container">
+              <div id="timer">
+                <div id="time">
+                  <span id="minutes">25</span>
+                  <span id="colon">:</span>
+                  <span id="seconds">00</span>
+                </div>
+                <div id="filler"></div>
+              </div>
+
+              <div id="buttons">
+                <button id="work">Work</button>
+                <button id="shortBreak">Short Break</button>
+                <button id="longBreak">Long Break</button>
+                <button id="stop">Stop</button>
+              </div>
+
+            </div>
+          </div>
+    </body>
+</html>

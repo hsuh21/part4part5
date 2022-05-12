@@ -1,0 +1,113 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: rgb(254, 192, 159);
+  font-family: 'Lexend', sans-serif;
+}
+#tomato-contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tomato{
+  background: url("tomato.svg") no-repeat;
+  width: 13vw;
+  height: 13vw;
+  margin-top: 10px;
+}
+.tomato:hover{
+  background: url("tomatotalk.svg") no-repeat;
+  width: 15vw;
+  height: 15vw;
+  cursor: pointer;
+}
+#result{
+  position: relative;
+  width: 22vw;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+  text-align: left;
+  font-size: 1.2vw;
+}
+.result-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  right: 32px;
+  bottom: -24px;
+}
+
+#pomodoro-app{
+  display: flex;
+  align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  #timer{ 
+    background-color: #fff;
+    color:#f00; 
+    font-size:7vw;
+    border : 5px solid red;
+    border-radius:20px;
+    width:45vw;
+    height:15vw;
+    overflow:hidden;
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #time{
+    z-index : 1;
+    position:relative;
+  }
+
+  button { 
+    background:#f00; 
+    font-family: 'Lexend', sans-serif;
+    border:none; 
+    color:#fff; 
+    cursor:pointer; 
+    width:9vw; 
+    height: 5vw;
+    margin-top: 3vw;
+    font-size:1.2vw;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 44vw;
+}
+
